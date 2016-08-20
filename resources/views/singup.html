@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pooya.Azarpour">
+    <meta name="description" content="workout 5">
+    <meta name="keyword" content="workout 5">
+    <title>Workout 5</title>
+
+    <link rel="shortcut icon" href="{@domain}/public/assets/images/favicon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{@domain}/public/assets/stylesheets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="{@domain}/public/assets/stylesheets/fontawesome/font-awesome.min.css">
+</head>
+<body>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="alert alert-{@alert.type}{@alert.stats}">
+                	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                	<strong>Title!</strong>
+                    <ul>
+                        {@alert.message|repeat,li}
+                    </ul>
+                </div>
+
+                <form method="POST" role="form">
+                    <legend>Register Form</legend>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your username" required>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="foo">Foo Number</label>
+                                <input type="number" class="form-control" name="foo" id="foo" placeholder="Enter your foo number" min="1" max="10" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+                            </div>
+                    	</div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="cpassword">Confirm Password</label>
+                                <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Enter your confirm password" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+        </div>
+    </div>
+
+    <script src="{@domain}/public/assets/js/jquery/jquery.min.js"></script>
+    <script src="{@domain}/public/assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="{@domain}/public/assets/js/angular/angular.min.js"></script>
+    <!--<script src="{@domain}/public/assets/js/angular/angular-main.js"></script>-->
+</body>
+</html>
