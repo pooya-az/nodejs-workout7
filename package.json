@@ -1,9 +1,9 @@
 {
   "name" : "myapp",
   "version" : "0.1.0",
-  "main" : "myapp.js",
+  "main" : "app.js",
   "scripts" : {
-    "start" : "node myapp.js"
+    "start" : "node app.js"
   },
   "engines" : {
     "node" : "~6.0"
